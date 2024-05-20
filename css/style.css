@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color: #eb1d36;
+}
+
+body {
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+.fontFamily-pacifo {
+  font-family: var(--fontBree);
+  font-size: 21px;
+  font-weight: 400;
+  padding: 0 0 8px;
+}
+.alert-ol-p {
+  font-size: 18px;
+  padding: 10px 0 0;
+}
+:root {
+  --fontPacifico: "Pacifico", cursive;
+  --fontRighteous: "Righteous", sans-serif;
+  --fontBree: "Bree Serif", serif;
+}
+
+h1 {
+  font-family: var(--fontPacifico);
+  font-size: 50px;
+  font-family: "Pacifico", cursive;
+  color: #352e28;
+  position: relative;
+  font-weight: 500;
+  line-height: 1.2;
+  width: fit-content ;
+  margin-inline: auto;
+  z-index: 1;
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5%;
+  left: 0;
+  bottom: 8px;
+  background-image: linear-gradient(to right,  #3ca55c, #b5ac49 , red);
+  transition: height 500ms;
+  z-index: -1;
+}
+
+h1:hover::before {
+  height: 50%;
+}
+
+.bg-main {
+  background-color: #f7ecde;
+}
+
+h2 {
+  font-family: var(--fontRighteous);
+  font-size: 25px;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49, red);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bookmark-body {
+  border-width: 2px 0 2px 0;
+  border-style: dotted;
+  border-color: #352e28;
+}
+
+#submitBtn {
+  --bs-btn-border-color: #eb1d36;
+  --bs-btn-border-color: #eb1d36;
+  color: #fff;
+}
+
+#submitBtn:hover {
+  background-color: #eb1d36;
+
+  border-color: #a03315;
+  color: #fff;
+}
+
+.btn-visit {
+  --bs-btn-color: #fff !important;
+  --bs-btn-bg: #3ca55c !important;
+  --bs-btn-border-color: #3ca55c !important;
+  --bs-btn-hover-color: #fff !important;
+  --bs-btn-hover-bg: #3ca55c !important;
+  --bs-btn-hover-border-color: #3ca55c !important;
+}
+
+.btn-delete {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #eb1d36;
+  --bs-btn-border-color: #eb1d36;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #d30820;
+  --bs-btn-hover-border-color: #ba081d;
+}
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #eb1d36;
+  outline: 0;
+   box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+.box-info {
+  background-color: #0007;
+}
+
+.box-conent {
+  width: 500px;
+  z-index: 10;
+}
+
+.circles span {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.circles span:nth-child(1) {
+  background-color: #f15f5d;
+}
+
+.circles span:nth-child(2) {
+  background-color: #eb1d36;
+}
+
+.circles span:nth-child(3) {
+  background-color: #4db748;
+}
+
+.rules i {
+  color: #bb4120;
+}
